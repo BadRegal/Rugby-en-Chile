@@ -6,41 +6,48 @@
 
 	<link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.min.css">
 	<script type="text/javascript" src="./bootstrap/js/bootstrap.bundle.min.js"></script>
-		
-		
+	<style type="text/css">
+		table{
+			
+			margin: o auto;
+
+		}
+
+
+	</style>
+
 </head>
+<div>
 <body style="background-color: lightgrey;">
 
 	
-	<header class="p-1 bg-#160E59 text-white text-center">
+	<header class="p-1 bg-  text-white text-center " style="background-color: #261D71">
 		<h1>Datos de contacto</h1>
 			<p>Ingrese sus datos abajo</p>
 
 	</header>
 
+		<form action="Index.html" method="get">
 
-	<form action="Index.html" method="get">
+			<table border="1" >
+				<tr>
+					<td>Nombre</td>
+					<td><input type="text" name="nom" cols="50" autofocus required></td>
+				</tr>
+				<tr>
+					<td>Correo electronico</td>
+					<td><input type="email" name="mail" cols="50"  required></td>
+				</tr>
+				<tr>
+					<td>Consulta</td>
+					<td colspan="2"><textarea name="consulta" rows="2" cols="50" ></textarea></td>
+				</tr>
+				<tr>
+				<td colspan="2"><input type="submit" name="botom" value="enviar"></td>
+				
+				</tr>
 
-		<table border="1" >
-			<tr>
-				<td>Nombre</td>
-				<td><input type="text" name="nom" cols="50" autofocus required></td>
-			</tr>
-			<tr>
-				<td>Correo electronico</td>
-				<td><input type="email" name="mail" cols="50"  required></td>
-			</tr>
-			<tr>
-				<td>Consulta</td>
-				<td colspan="2"><textarea name="consulta" rows="2" cols="50" ></textarea></td>
-			</tr>
-			<tr>
-			<td colspan="2"><input type="submit" name="botom" value="enviar"></td>
-			
-			</tr>
-
-		</table>
-	</form>
-
+			</table>
+		</form>
 </body>
 </html>
