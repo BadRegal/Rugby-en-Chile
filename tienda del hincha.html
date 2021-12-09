@@ -31,6 +31,7 @@
 			text-align: center;
 			padding: 20px;
 
+
 		}
 		h3{
 			font-size: 25px;
@@ -38,12 +39,25 @@
 		h6{
 			padding-left: 40%;
 		}
-	
-		#articulos{
-				font-size: 15px;
+		#form{
+			display: inline-block;
+			border: 3px solid black;
+			margin: 0 auto;
+			background-color: #c92800; 
+			text-align: center;
+			color: white;
+			padding-top: 40px;
+			text-transform: uppercase;
+		}
+		table{
+			background-color: #0082ba; 
+			color:white;
+			margin: 0 auto; 
+
+		}
 		}
 		@media only screen and(max-width: 800px){
-			body, header, p, h2, h3, #articulos{
+			body, header,  p, h2, h3, {
 				width: 100%;
 
 
@@ -58,12 +72,12 @@
 		<h1>Tienda del Hincha</h1>
 		
 	</header>
-
-	<h6><p style="text-align: center;">Estimados, ya tenemos a su disposición todos los productos originales de nuestro gran equipo Craighouse Old Boys & Girls.   Acá tienes el mejor regalo para ese papá fanatico de nuestro Club!!! </p></h6>
-
+		<h5><p style="text-align: center;">Estimados, ya tenemos a su disposición todos los productos originales de nuestro gran equipo Craighouse Old Boys & Girls.   Acá tienes el mejor regalo para ese papá fanatico de nuestro Club!!!</p></h5>
+		
 	<div>
 		<h2>Productos a la Venta</h2>
 	</div>
+
 
 		<div class="container-lg">
 			
@@ -192,12 +206,12 @@
 	</div><br>
 
 
-	<div class="container-xl my-3" style="margin: 0 auto;background-color: #c92800; text-align: center;width: 70%;height: auto; color: white;">
+	<div id="form" class="container-fluid my-3">
 		<h2>Formulario de solicitud<h2>
 	</div>
 	<div class="container-sm">
 		<form action="Index.html" method="get">
-			<table border="1"  class="my-3"style="margin: 0 auto; background-color: #0082ba; color:white">
+			<table border="1">
 				<tr>
 					<td>Nombre</td>
 					<td><input type="text" name="nom" maxlength="10" required autofocus ></td>
@@ -249,7 +263,7 @@
 
 
 	<footer>
-	 hsusjhdcbhsbcds	
+		<p>Para volver a la pagina principal, pincha <a href="Index.html">acá</a></p>
 
 	</footer>
 </body>
